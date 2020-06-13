@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import ClassComponentProvider from './ClassComponentProvider';
 import * as serviceWorker from './serviceWorker';
 
+var container = document.getElementById('container');
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <ClassComponentProvider />,
+  container
 );
 
 // If you want your app to work offline and load faster, you can change
