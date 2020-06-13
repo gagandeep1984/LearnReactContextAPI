@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ClassComponentProvider from './ClassComponentProvider';
 import * as serviceWorker from './serviceWorker';
+import FunctionalComponentProvider from './FunctionalComponentProvider';
 
 var container = document.getElementById('container');
 
 ReactDOM.render(
-  <ClassComponentProvider />,
+  <FunctionalComponentProvider />,
   container
 );
 
